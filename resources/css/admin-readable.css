@@ -1,0 +1,23 @@
+/* Quiet admin workspace: clear hierarchy and restrained color. */
+.admin-body { background: #fbf8fa; color: #3f3540; }
+.admin-sidebar { width: 238px; background: #fff; border-right: 1px solid #eadde2; box-shadow: none; }
+.admin-link { color: #625861; padding: .7rem 1.1rem; border-left: 3px solid transparent; }
+.admin-link:hover { background: #fff1f5; color: #8f4d62; }
+.admin-link.active { background: #fff1f5; color: #8f4d62; border-left-color: #e8a9b9; }
+.admin-main { margin-left: 238px; padding: 1.25rem 1.5rem; }
+.admin-topbar, .admin-card, .stat-card { background: #fff; border: 1px solid #eadde2; border-radius: 8px; box-shadow: none; }
+.admin-topbar { padding: .85rem 1rem; margin-bottom: 1.25rem; }
+.admin-card .card-header { background: #fff; border-bottom: 1px solid #eadde2; color: #4b3d46; }
+.stat-card { padding: 1rem; }
+.stat-card .si { border-radius: 7px; background: #dceef7; color: #426574; }
+.stat-card .si.navy { background: #fff1f5; color: #a85d73; }
+.stat-card .si.green { background: #f7e6aa; color: #776329; }
+.table-admin thead th { background: #fff8fa; color: #665761; border-bottom: 1px solid #eadde2; }
+.table-admin tbody td { border-color: #f2e8ec; }
+.admin-body .btn { border-radius: 6px; box-shadow: none; }
+.admin-body .form-control, .admin-body .form-select { border-radius: 6px; border-color: #dfd2d8; }
+.admin-body .form-control:focus, .admin-body .form-select:focus { border-color: #e8a9b9; box-shadow: 0 0 0 .15rem rgba(232,169,185,.2); }
+
+@media (max-width: 991.98px) {
+    .admin-main { margin-left: 0; padding: 1rem; }
+}

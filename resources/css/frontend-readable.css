@@ -1,0 +1,107 @@
+/* Shared visual language: soft pink, baby blue, warm yellow, and quiet spacing. */
+:root {
+    --site-pink: #e8a9b9;
+    --site-pink-soft: #fff1f5;
+    --site-blue: #dceef7;
+    --site-yellow: #f7e6aa;
+    --site-ink: #3f3540;
+    --site-muted: #756b73;
+    --site-border: #eadde2;
+}
+
+body {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    color: var(--site-ink);
+    background: #fff;
+}
+
+.site-navbar {
+    background: #fff;
+    border-bottom: 1px solid var(--site-border);
+    backdrop-filter: none;
+    box-shadow: none;
+}
+
+.nav-link-site {
+    color: var(--site-ink);
+    border-radius: 6px;
+}
+
+.nav-link-site:hover,
+.nav-link-site.active {
+    color: #a85d73;
+    background: var(--site-pink-soft);
+}
+
+.hero,
+.page-hero {
+    background: var(--site-pink-soft);
+    color: var(--site-ink);
+}
+
+.hero::after { display: none; }
+.hero h1,
+.page-hero h1,
+.hero h2,
+.hero h3 { color: #8f4d62; }
+.hero p.lead-text,
+.hero-stat span,
+.page-hero p { color: var(--site-muted); }
+
+.section,
+.section-soft,
+.section:nth-of-type(even) { background: #fff; }
+
+.section { padding: 4rem 0; }
+.section-head { margin-bottom: 2rem; }
+.section-title { font-weight: 600; }
+.section-desc { color: var(--site-muted); }
+.title-line { height: 3px; background: var(--site-pink); border-radius: 2px; }
+
+.btn { border-radius: 6px; box-shadow: none !important; font-weight: 500; }
+.btn-accent { background: var(--site-pink); color: #fff; }
+.btn-accent:hover { background: #d98ea2; color: #fff; }
+.btn-navy { background: #91bfd2; color: #233b45; }
+.btn-soft { background: var(--site-blue); color: #426574; }
+
+.card,
+.feature-card,
+.mission-card,
+.testimonial-card,
+.info-card,
+.product-card,
+.card-simple {
+    border: 1px solid var(--site-border);
+    border-radius: 8px;
+    box-shadow: none;
+    transition: none;
+}
+.card:hover,
+.feature-card:hover { transform: none; box-shadow: none; }
+.card-img-top { height: 190px; }
+.product-media { height: 200px; background: var(--site-blue); }
+.service-icon,
+.feature-card .fi,
+.info-card .ii { border-radius: 8px; background: var(--site-pink-soft); color: #a85d73; }
+
+.about-media img,
+.hero-visual img { border-radius: 8px; box-shadow: none; border: 0; }
+.about-media .experience { background: var(--site-yellow); color: var(--site-ink); border-radius: 8px; box-shadow: none; }
+.vision-card,
+.cta-box { background: var(--site-blue); color: var(--site-ink); border-radius: 8px; box-shadow: none; }
+.vision-card h3,
+.cta-box h2 { color: #426574; }
+
+.site-footer { background: #f8edf1; color: var(--site-muted); }
+.site-footer h6,
+.site-footer .brand-name { color: #8f4d62; }
+.site-footer h6::after { background: var(--site-pink); }
+.footer-link,
+.footer-info li { color: var(--site-muted); }
+
+.wa-float { box-shadow: none; }
+
+@media (max-width: 767.98px) {
+    .section { padding: 3rem 0; }
+    .hero { padding: 4.5rem 0 3.5rem; }
+}
